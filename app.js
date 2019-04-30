@@ -25,3 +25,9 @@ app.listen(process.env.PORT, () => {
     console.log(`EXPRESS LISTENTING ON PORT ${process.env.PORT}`);
 });
 
+
+setInterval(() => {
+    axios.post(process.env.WEBHOOK, {
+        content: "@everyone AAAAAAAAHAGHGH!",
+    });
+}, 1.728e+8);
